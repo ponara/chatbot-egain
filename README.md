@@ -41,3 +41,24 @@ user input is validated (e.g., 6-character tracking numbers) and responses are d
 chat window automatically scrolls to the latest message for a smooth user experience.
 
 ## chatbot in action
+![Chatbot demo](./chatbot.gif)
+
+## unexpected user inputs
+
+*invalid menu selection*
+
+if the user enters something other than 1, 2, or 3 at the main menu, the bot responds:
+
+“I’m sorry, I don’t understand. Please enter 1, 2, or 3.”
+
+this ensures the user stays within the expected options and prevents the bot from breaking.
+
+*invalid tracking number*
+
+when the user enters a tracking number that does not match the 6-character alphanumeric format, the bot responds:
+
+“Hmm, that doesn't look right. please enter a 6-character tracking number.”
+
+additionally, if the tracking number is valid in format but not found in the data, the bot responds:
+
+“I’m sorry, I can’t find a package with that number.”
